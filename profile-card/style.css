@@ -122,3 +122,8 @@ body{
   li{
     list-style: none;
   }
+.copyrights{
+position:relative;
+left:2rem;
+top:4rem;
+  }
