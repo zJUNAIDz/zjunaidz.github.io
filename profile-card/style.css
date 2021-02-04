@@ -28,9 +28,9 @@
    position: absolute;
    width: 21rem;
    height: 9rem;
-   background-size:cover;
    background-repeat:no-repeat;
    background-image: linear-gradient(to bottom,rgba(150, 109, 255, 0.50),rgba(150, 194, 255, 0.50)),url(images/cover.jpeg);
+   background-size:cover;
    border-top-right-radius: 5px;
    border-top-left-radius: 5px;
  }
