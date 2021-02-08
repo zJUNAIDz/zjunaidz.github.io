@@ -1,0 +1,1 @@
+Alert = () => alert('This Website is non-functional');
