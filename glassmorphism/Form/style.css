@@ -18,7 +18,13 @@ body {
    position: relative;
    top: 130px;
    backdrop-filter: blur(10px);
-   background-color: rgba(255,255,255,0.2);
+   background-color: rgba(255,255,255,0.25);
+   border:none;
+   transition-property: all;
+   transition-duration: 1s;
+ }
+ form:hover{
+   background-color: rgba(255,255,255,0.5);
  }
  h2{
    color: white;
@@ -41,7 +47,10 @@ body {
    border-radius: 45px;
    outline: none;
    border: none;
-   color: rgba(255,255,255,1);
+   color: rgba(255,255,255,0.5);
+ }
+ input:focus{
+   border: 1px solid rgba(255,255,255,0.7);
  }
  button{
    margin:20px;
@@ -50,8 +59,8 @@ body {
    border:none;
    outline:none;
    color:white;
-    backdrop-filter: blur(15px);
-    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
  }
  @keyframes animate1{
    0%,100% {
@@ -76,6 +85,7 @@ body {
    animation-duration: 3s;
    animation-iteration-count: infinite;
    animation-timing-function: ease-in-out;
+   box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
  }
    @keyframes animate2{
    0%,100% {
@@ -99,6 +109,7 @@ body {
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
   }
     @keyframes animate3{
    0%,100% {
@@ -121,6 +132,7 @@ body {
      animation-duration: 5s;
      animation-iteration-count: infinite;
      animation-timing-function: ease-in-out;
+     box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
    }
    p{
      font-size: 10pt;
