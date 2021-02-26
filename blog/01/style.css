@@ -91,6 +91,37 @@ label input[type="checkbox"]:checked~.fas {
   z-index: 2;
   top: 10px;
 }*/
+@keyframes faltuEffects{
+  0%,100%{
+   top: 35px;
+  }
+  50%{
+  top: 45px;  
+  }
+}
+.card:hover{
+  animation: faltuEffects 1s ease-in-out infinite;
+}
+@keyframes moves{
+  0%{
+   top: 10%;
+   opacity: 0;
+  }
+  50%{
+   top: 30px; 
+   opacity: 0.5;
+  }
+  70%{
+    top: 50px;
+    opacity: 1;
+  }
+  85%{
+    top: 40px;
+  }
+  100%{
+    top: 50px;
+  }
+}
 .topic {
   position: relative;
   top: 50px;
@@ -98,6 +129,7 @@ label input[type="checkbox"]:checked~.fas {
   text-align: center;
   font-size: 20px;
   color: var(--topic);
+  animation: moves 3s ease-in-out;
 }
 
 .reddit {
