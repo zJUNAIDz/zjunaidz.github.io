@@ -188,8 +188,7 @@ a {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 a:active {
-
-  padding: 9px 18px !important;
+  padding: 4px 28px !important;
 }
 
 p{
