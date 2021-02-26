@@ -189,7 +189,7 @@ a {
 }
 a:active {
 
-  padding: 9px 18px;
+  padding: 9px 18px !important;
 }
 
 p{
