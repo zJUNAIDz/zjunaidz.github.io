@@ -106,7 +106,7 @@ label input[type="checkbox"]:checked~.fas {
 }
 
 .card {
-  background: var(--bgCard);
+  background-image: var(--bgCard);
   margin: 20px;
   display: flex;
   align-items: center;
