@@ -6,4 +6,3 @@ checkbox.addEventListener('change',function (){
     document.documentElement.setAttribute('data-theme','light');
   }
 });
-alert('The dark mode is not so good I think...toggle it by pressing that moon Icon');
