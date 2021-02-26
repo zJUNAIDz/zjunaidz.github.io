@@ -189,6 +189,7 @@ a {
 }
 a:active {
   padding: 4px 28px !important;
+  outline: none;
 }
 
 p{
