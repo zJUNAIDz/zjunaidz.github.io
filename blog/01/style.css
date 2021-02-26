@@ -106,7 +106,7 @@ label input[type="checkbox"]:checked~.fas {
 }
 
 .card {
-  background-color: var(--bgCard)!important;
+  background: var(--bgCard);
   margin: 20px;
   display: flex;
   align-items: center;
@@ -187,7 +187,6 @@ a {
   background-color: var(--themeColor)!important;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
-
 a:active {
 
   padding: 9px 18px;
