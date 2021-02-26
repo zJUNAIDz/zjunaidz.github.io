@@ -10,7 +10,7 @@ html {
 html[data-theme="dark"] {
   --themeColor: black;
   --bg:black;
-  --bgCard: #8B16DE;
+  --bgCard: linear-gradient(to bottom,#917AAB,#762FC5);
   --text: white;
   --topic: white;
   --shadow: 10px 10px 7px rgba(255, 255, 255, 0.2);
