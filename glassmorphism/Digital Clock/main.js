@@ -1,4 +1,4 @@
-setInterval(clock(), 1000);
+setInterval(clock, 1000);
 function clock() {
   let hours = document.getElementById('hours');
   let minutes = document.getElementById('minutes');
