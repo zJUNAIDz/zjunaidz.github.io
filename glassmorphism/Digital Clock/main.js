@@ -11,7 +11,7 @@ function clock() {
   minutes.innerHTML = mins;
   seconds.innerHTML = secs;
   if (hrs == 0) {
-    hours.innerHTML = 1 + hrs;
+    hours.innerHTML = "01" + hrs;
   };
   if (secs < 10) {
     seconds.innerHTML = '0' + secs;
