@@ -10,6 +10,9 @@ function clock() {
   hours.innerHTML = hrs;
   minutes.innerHTML = mins;
   seconds.innerHTML = secs;
+if (hrs > 11) {
+    ampm.innerHTML = 'PM';
+  }
   if (hrs == 0) {
     hours.innerHTML = 1 + hrs;
   };
@@ -24,6 +27,5 @@ function clock() {
   };
   if (hrs > 12) {
     hours.innerHTML = hrs ;
-    ampm.innerHTML = 'PM';
   };
 };
