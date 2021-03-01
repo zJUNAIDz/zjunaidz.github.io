@@ -1,4 +1,5 @@
 setInterval(clock, 1000);
+
 function clock() {
   let hours = document.getElementById('hours');
   let minutes = document.getElementById('minutes');
@@ -10,7 +11,7 @@ function clock() {
   hours.innerHTML = hrs;
   minutes.innerHTML = mins;
   seconds.innerHTML = secs;
-if (hrs > 11) {
+  if (hrs > 11) {
     ampm.innerHTML = 'PM';
   }
   if (hrs == 0) {
@@ -26,6 +27,7 @@ if (hrs > 11) {
     hours.innerHTML = '0' + hrs;
   };
   if (hrs > 12) {
-    hours.innerHTML = hrs ;
+    hours.innerHTML = hrs;
   };
+  
 };
