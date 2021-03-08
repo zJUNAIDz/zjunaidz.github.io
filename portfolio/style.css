@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* Navigation Bar styles*/
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:white;
+  position:absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.topName{
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 30px;
+  position: relative;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+/* home styles */
+#home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,51,102,1);
+  height: 300px;
+}
+.naming{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  color:white;
+}
+.introName{
+  font-size: 1.2rem;
+  font-weight: 800 !important;
+  -webkit-font-weight:800;
+  -webkit-font-smoothing: antialiased
+}
+.introAbout{
+  margin-top: 5px;
+  font-weight:200 !important;
+  -webkit-font-weight: 100;
+  text-align: center;
+  -webkit-font-smoothing: antialiased
+}
+.topImage{
+  height: 200px;
+  width: 200px;
+}
+/* section1 Learnings styles */
+.section1{
+ margin: 10px 10px; 
+ padding: 10px;
+ box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+ border-radius:5px;
+ background: linear-gradient(to right, whitesmoke,white);
+}
+i{
+  margin: 6px;
+  font-size: 40px;
+}
+.fa-html5{
+  color: red;
+}
+.fa-css3{
+  color: rgba(0,0,255,0.9);
+}
+.fa-js{
+  color: yellow;
+  background-color: black;
+  border:none;
+}
+.card{
+  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  left: 15px;
+}
+.progress{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 20px;
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+@keyframes loadHTML{
+  0%{
+    width: 0px;
+  }
+  100%{
+    width:160px;
+  }
+}
+@keyframes loadCSS{
+  0%{
+    width: 0px;
+  }
+  100%{
+    width:140px;
+  }
+}
+@keyframes loadJS{
+  0%{
+    width: 0px;
+  }
+  100%{
+    width:60px;
+  }
+}
+.progress::after{
+  content: "";
+  display: block;
+  height: 16px;
+  width: 100px;
+  margin: 1px;
+  background: linear-gradient(to right,#FF43D8,#D554EA);
+  border-radius:8px;
+}
+.htmlProgress::after{
+  width: 160px;
+  animation: loadHTML 3s;
+}
+.cssProgress::after {
+  width: 140px;
+  animation: loadCSS 2.6s;
+}
+.jsProgress::after {
+  width: 60px;
+  animation: loadJS 2s;
+}
+.percent{
+  color: #A52DC7;
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+  top: -20px;
+  left:-40px;
+}
+/* section2 Qualifications styles */
+.section2{
+  margin: 10px 10px;
+  padding: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: linear-gradient(to right, whitesmoke , white);
+
+}
+.fa-school{
+  font-size: 20px;
+}
+.sec2Topic{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.sec2Para{
+  text-align: center;
+  margin: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* section3 My Work styles */
+.section3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+    margin: 10px 10px;
+  padding: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: linear-gradient(to right, whitesmoke , white);
+}
+.sec3Topic{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fa-book{
+  font-size: 20px;
+}
+.projects{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 10px;
+  padding: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: linear-gradient(to right,rgba(240, 248, 255,0.8) , white);
+}
+.projectPara{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+h4{
+  font-size: 20px;
+  padding:10px 5px;
+}
+/* footer styles */
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color:rgba(93, 138, 168,1);
+  padding: 30px 10px;
+  color: whitesmoke;
+}
+.linkDiv{
+  padding:20px 0;
+}
+input{
+  appearance:none;
+}
+.copyright,.thanks{
+  font-weight: 300 !important;
+}
+.thanks{
+  position: relative;
+  top: 20px;
+}
+.link{
+  color:white;
+  background-color: #C52DF5;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+.link:active{
+  box-shadow:0px 0px 0px black;
+  transform: translate(3px,3px)
+}
