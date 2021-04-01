@@ -1,87 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+* {
   margin: 0;
-  padding:0;
+  padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+body {
+  background-color: hsl(126, 30%, 94%);
+}
+
 /* Navigation Bar styles*/
-nav{
+nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  color:white;
-  position:absolute;
+  color: white;
+  position: absolute;
   z-index: 1;
   width: 100%;
 }
 
-.topName{
+.topName {
   font-family: 'Akaya Telivigala', cursive;
   font-size: 30px;
   position: relative;
 }
-a{
+
+a {
   text-decoration: none;
   color: white;
 }
+
 /* home styles */
-#home{
+#home {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0,51,102,1);
+  background: url(images/bgCover.jpg) no-repeat;
+  background-size: cover;
   height: 300px;
 }
-.naming{
-  display:flex;
+
+.naming {
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin: 5px;
-  color:white;
+  color: white;
 }
-.introName{
-  font-size: 1.2rem;
-  font-weight: 800 !important;
-  -webkit-font-weight:800;
-  -webkit-font-smoothing: antialiased
+
+.introName {
+  font-size: 2.2rem;
+  font-family: 'Ubuntu', sans-serif;
+  color: transparent;
+  background: linear-gradient(
+   90deg,
+   #fc87da 0%,
+   #cb94ef 36%,
+   #41e0e7 70%,
+   #28fcc2 100%);
+   padding: 5px;
+   background-clip: text;
+   -webkit-background-clip: text;
 }
-.introAbout{
+
+.introAbout {
   margin-top: 5px;
-  font-weight:200 !important;
-  -webkit-font-weight: 100;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
   text-align: center;
   -webkit-font-smoothing: antialiased
 }
-.topImage{
+
+.topImage {
   height: 200px;
   width: 200px;
 }
+
 /* section1 Learnings styles */
-.section1{
- margin: 10px 10px; 
- padding: 10px;
- box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
- border-radius:5px;
- background: linear-gradient(to right, whitesmoke,white);
+.section1 {
+  margin: 10px 10px;
+  padding: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: /*url(images/progressCover.jpg) no-repeat;*/linear-gradient(to right, whitesmoke,white);
+  background-size: cover;
 }
-i{
+
+i {
   margin: 6px;
   font-size: 40px;
 }
-.fa-html5{
+
+.fa-html5 {
   color: red;
 }
-.fa-css3{
-  color: rgba(0,0,255,0.9);
+
+.fa-css3 {
+  color: rgba(0, 0, 255, 0.9);
 }
-.fa-js{
+
+.fa-js {
   color: yellow;
   background-color: black;
-  border:none;
+  border: none;
 }
-.card{
+
+.card {
   padding: 10px;
   display: flex;
   align-items: flex-end;
@@ -89,7 +118,8 @@ i{
   position: relative;
   left: 15px;
 }
-.progress{
+
+.progress {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -99,102 +129,124 @@ i{
   border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
-@keyframes loadHTML{
-  0%{
+@keyframes loadHTML {
+  0% {
     width: 0px;
   }
-  100%{
-    width:160px;
+
+  100% {
+    width: 160px;
   }
 }
-@keyframes loadCSS{
-  0%{
+
+@keyframes loadCSS {
+  0% {
     width: 0px;
   }
-  100%{
-    width:140px;
+
+  100% {
+    width: 140px;
   }
 }
-@keyframes loadJS{
-  0%{
+
+@keyframes loadJS {
+  0% {
     width: 0px;
   }
-  100%{
-    width:60px;
+
+  100% {
+    width: 60px;
   }
 }
-.progress::after{
+
+.progress::after {
   content: "";
   display: block;
   height: 16px;
   width: 100px;
   margin: 1px;
-  background: linear-gradient(to right,#FF43D8,#D554EA);
-  border-radius:8px;
+  background: linear-gradient(to right, #fc87da, #cb94ef);
+  border-radius: 8px;
 }
-.htmlProgress::after{
+
+.htmlProgress::after {
   width: 160px;
   animation: loadHTML 3s;
 }
+
 .cssProgress::after {
   width: 140px;
   animation: loadCSS 2.6s;
 }
+
 .jsProgress::after {
   width: 60px;
   animation: loadJS 2s;
 }
-.percent{
-  color: #A52DC7;
+
+.percent {
+  color: #fc87da;
   font-weight: 700;
   font-size: 20px;
   position: relative;
   top: -20px;
-  left:-40px;
+  left: -40px;
 }
+
 /* section2 Qualifications styles */
-.section2{
+.section2 {
   margin: 10px 10px;
   padding: 10px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  background: linear-gradient(to right, whitesmoke , white);
+  background:
+    /*skyblue ;*/
+    linear-gradient(to right, whitesmoke, white);
 
 }
-.fa-school{
+
+.fa-school {
   font-size: 20px;
 }
-.sec2Topic{
+
+.sec2Topic {
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
-.sec2Para{
+
+.sec2Para {
   text-align: center;
   margin: 5px;
   font-family: 'Open Sans', sans-serif;
 }
+
 /* section3 My Work styles */
-.section3{
+.section3 {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-    margin: 10px 10px;
+  margin: 10px 10px;
   padding: 10px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  background: linear-gradient(to right, whitesmoke , white);
+  background:
+    /*#fff000;*/
+    linear-gradient(to right, whitesmoke, white);
 }
-.sec3Topic{
+
+.sec3Topic {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.fa-book{
+
+.fa-book {
   font-size: 20px;
 }
-.projects{
+
+.projects {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,41 +255,50 @@ i{
   padding: 10px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  background: linear-gradient(to right,rgba(240, 248, 255,0.8) , white);
+  background: linear-gradient(to right, rgba(240, 248, 255, 0.8), white);
 }
-.projectPara{
+
+.projectPara {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
 }
-h4{
+
+h4 {
   font-size: 20px;
-  padding:10px 5px;
+  padding: 10px 5px;
 }
+
 /* footer styles */
-footer{
+footer {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color:rgba(93, 138, 168,1);
+  background-color: rgba(93, 138, 168, 1);
   padding: 30px 10px;
   color: whitesmoke;
 }
-.linkDiv{
-  padding:20px 0;
+
+.linkDiv {
+  padding: 20px 0;
 }
-input{
-  appearance:none;
+
+input {
+  appearance: none;
 }
-.copyright,.thanks{
+
+.copyright,
+.thanks {
   font-weight: 300 !important;
 }
-.thanks{
+
+.thanks {
   position: relative;
   top: 20px;
 }
-.link{
-  color:white;
+
+.link {
+  color: white;
   background-color: #C52DF5;
   padding: 5px 10px;
   border-radius: 5px;
@@ -248,7 +309,8 @@ input{
   border: none;
   outline: none;
 }
-.link:active{
-  box-shadow:0px 0px 0px black;
-  transform: translate(3px,3px)
+
+.link:active {
+  box-shadow: 0px 0px 0px black;
+  transform: translate(3px, 3px)
 }
