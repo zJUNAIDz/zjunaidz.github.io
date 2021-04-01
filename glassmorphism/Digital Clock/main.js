@@ -13,9 +13,11 @@ function clock() {
   seconds.innerHTML = secs;
   if (hrs > 11) {
     ampm.innerHTML = 'PM';
+  }else{
+    ampm.innerHTML = 'AM';
   }
   if (hrs == 0) {
-    hours.innerHTML = 1 + hrs;
+    hours.innerHTML = hrs + 1;
   };
   if (secs < 10) {
     seconds.innerHTML = '0' + secs;
@@ -23,11 +25,11 @@ function clock() {
   if (mins < 10) {
     minutes.innerHTML = '0' + mins;
   };
-  if (hrs < 10) {
-    hours.innerHTML = '0' + hrs;
-  };
   if (hrs > 12) {
-    hours.innerHTML = hrs;
+    let hrss = hrs - 12;
+    hours.innerHTML =  '0' + hrss ;
   };
-  
+  if (hrs < 10) {
+    hours.innerHTML = '0' + hrs
+  }
 };
