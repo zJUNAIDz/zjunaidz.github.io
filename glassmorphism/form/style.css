@@ -1,0 +1,164 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 5px;
+  height: 350px;
+  position: relative;
+  top: 130px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.25);
+  border: none;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+form:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+h2 {
+  color: white;
+  margin: 20px;
+}
+
+i {
+  color: white;
+  position: relative;
+  bottom: 2px;
+  font-size: 18px;
+}
+
+a {
+  color: white;
+}
+
+input {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 5px;
+  padding: 15px;
+  border-radius: 45px;
+  outline: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+button {
+  margin: 20px;
+  padding: 15px 25px;
+  border-radius: 45px;
+  border: none;
+  outline: none;
+  color: white;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes animate1 {
+
+  0%,
+  100% {
+    transform: translateY(-20px);
+  }
+
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
+
+.square1 {
+  border-radius: 50%;
+  margin: 3px;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: -30px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  animation-name: animate1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes animate2 {
+
+  0%,
+  100% {
+    transform: translateY(-100px);
+  }
+
+  50% {
+    transform: translateY(-130px);
+  }
+}
+
+.square2 {
+  z-index: -1;
+  margin: 3px;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  right: -30px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  animation-name: animate2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes animate3 {
+
+  0%,
+  100% {
+    transform: translateY(-300px);
+  }
+
+  50% {
+    transform: translateY(-350px);
+  }
+}
+
+.square3 {
+  margin: 3px;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  right: -30px;
+  backdrop-filter: blur(25px);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  animation-name: animate3;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  font-size: 10pt;
+  color: rgba(255, 255, 255, 0.5);
+}
