@@ -158,7 +158,15 @@ i {
     width: 60px;
   }
 }
+@keyframes loadjQuery {
+  0% {
+    width: 0px;
+  }
 
+  100% {
+    width: 80px;
+  }
+}
 .progress::after {
   content: "";
   display: block;
@@ -182,6 +190,10 @@ i {
 .jsProgress::after {
   width: 60px;
   animation: loadJS 2s;
+}
+.jQueryProgress::after {
+  width: 80px;
+  animation: loadjQuery 2.2s;
 }
 
 .percent {
@@ -313,4 +325,8 @@ input {
 .link:active {
   box-shadow: 0px 0px 0px black;
   transform: translate(3px, 3px)
+}
+
+#p{
+  
 }
