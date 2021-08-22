@@ -14,17 +14,11 @@ const songs = [
   path: 'songs/1.mp3'
   },
  {
-  name: 'Immune system',
-  author: '---',
+  name: 'Samidare',
+  author: 'ksolic remix',
   image: 'images/image2.gif',
-  path: 'songs/2.wav'
+  path: 'songs/2.mp3'
   },
- {
-  name: '',
-  author: '',
-  image: '',
-  path: ''
-  }
   ];
 
 //Getting all elements from html
