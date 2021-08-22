@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+ --theme-text: rgba(255, 255, 255, 0.8);
+ --font: roboto condensed;
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+
+ font-family: var(--font);
+ height: 100vh;
+ background-color: #101010;
+}
+
+@font-face {
+ font-family: newFont;
+ src: url(fonts/newFonts.otf);
+}
+
+.title {
+ text-align: center;
+ font-family: 'newFont', zen tokyo Zoo;
+ font-size: 1rem;
+ color: var(--theme-text);
+}
+
+.fa-soundcloud {
+ font-size: 3rem;
+}
+
+img {
+ transform: translateX(1.8rem);
+ margin: 0.5rem 0;
+ height: 12rem;
+ width: 19rem;
+ border-radius: 5px;
+
+}
+
+.track-name {
+ color: var(--theme-text);
+ font-size: 2rem;
+ text-align: left;
+ margin: 0.5rem 1.8rem;
+ width: 90%;
+}
+
+.track-author {
+ color: var(--theme-text);
+ font-size: 0.7rem;
+ opacity: 0.9;
+ margin-left: 1.8rem;
+}
+
+.track-div {
+ text-align: center;
+}
+
+input[type="range"] {
+ -webkit-appearance: none;
+ appearance: none;
+ width: 19rem;
+ margin: 0.5rem 0;
+}
+
+input[type="range"]:focus {
+ outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track  {
+ background: rgba(0, 0, 0, 0.5);
+ cursor: pointer;
+ height: 3px;
+}
+
+input[type="range"]::-moz-range-track {
+ background: rgba(0, 0, 0, 0.5);
+ cursor: pointer;
+ height: 3px;
+}
+
+input[type="range"]::-ms-track {
+ background: rgba(0, 0, 0, 0.5);
+ cursor: pointer;
+ height: 3px;
+}
+
+input[type="range"]::-moz-range-thumb {
+ height: 15px;
+ width: 15px;
+ background: var(--theme-text);
+ margin-top: -5px;
+ border-radius: 50%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+ -webkit-appearance: none;
+ height: 15px;
+ width: 15px;
+ background: #fff;
+ margin-top: -5px;
+ border-radius: 50%;
+}
+
+input[type="range"]::-ms-thumb {
+ height: 15px;
+ width: 15px;
+ background:#fff;
+ margin-top: -5px;
+ border-radius: 50%;
+}
+
+input[type="range"]::-webkit-progress-value {
+ background: #A76AFF;
+}
+
+.progress-div {
+ color: rgba(255, 255, 255, 0.5);
+ font-size: 0.8rem;
+ margin: 1rem;
+}
+
+#total_time {
+ float: right
+}
+
+.buttons {
+ text-align: center;
+}
+
+.btn {
+ margin: 2rem 2rem;
+ color: var(--theme-text);
+ font-size: 2rem;
+ transition: all 0.1s linear;
+}
+
+.btn:active {
+ transform: scale(0.) translateY(3px);
+ color: #fff;
+}
+
+nput[type="checkbox"] {
+ -webkit-appearance: none;
+}

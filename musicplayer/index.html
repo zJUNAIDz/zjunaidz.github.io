@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+ <title>Music Player</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="title">
+  <i class="fab fa-soundcloud"></i>
+  <p>
+   Music Lab
+  </p>
+ </div>
+ <div class="img-div">
+  <img class="img" src="images/image0.gif" alt="Image">
+ </div>
+ <div class="track-info">
+  <span>
+   <p class="track-name">
+    superhuman genius
+   </p>
+   <p class="track-author">
+    KRONO
+   </p>
+ </div>
+ <div class="track-div">
+  <input type="range" name="seek-bar" id="track" value="0" min="0" max="100" onchange="seeker()"/>
+ </div>
+ <div class="progress-div">
+  <span id="curr_time">--:--</span>
+  <span id="total_time">--:--</span>
+ </div>
+ <div class="buttons">
+  <i class="fas btn fa-step-backward"></i>
+  <i id="play-button" class="fas btn fa-play"></i>
+  <i class="fas btn fa-step-forward"></i>
+  <audio id="audio">
+   Your Browser does not support Audio.
+  </audio>
+ </div>
+ <script src="main.js"></script>
+</body>
+</html>
