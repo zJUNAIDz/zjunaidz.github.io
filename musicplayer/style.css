@@ -11,6 +11,7 @@
  margin: 0;
  padding: 0;
  box-sizing: border-box;
+ outline:none;
 }
 
 body {
@@ -146,6 +147,7 @@ input[type="range"]::-webkit-progress-value {
 .btn:active {
  transform: scale(0.) translateY(3px);
  color: #fff;
+ outline:none;
 }
 
 nput[type="checkbox"] {
