@@ -118,7 +118,3 @@ function resetValues() {
  curr_time.innerHTML = '--:--';
  total_time.innerHTML = '--:--';
 }
-
-nextBtn.addEventListener('click', forward);
-prevBtn.addEventListener('click', backward);
-playBtn.addEventListener('click', playPause);
