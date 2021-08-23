@@ -100,7 +100,6 @@ function forward() {
  updateInfo();
  playTrack();
  resetValues();
-
 }
 
 function backward() {
@@ -110,7 +109,6 @@ function backward() {
  updateInfo();
  playTrack();
  resetValues();
- seekUpdate();
 }
 
 function resetValues() {
