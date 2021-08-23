@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@200&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 body {
@@ -23,9 +24,8 @@ nav {
   z-index: 1;
   width: 100%;
 }
-
 .topName {
-  font-family: 'Akaya Telivigala', cursive;
+  font-family:'Akaya Telivigala', cursive;
   font-size: 30px;
   position: relative;
 }
@@ -39,10 +39,12 @@ a {
 #home {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
   background: url(images/bgCover.jpg) no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   height: 300px;
+  z-index: -1;
 }
 
 .naming {
@@ -56,24 +58,38 @@ a {
 .introName {
   font-size: 2.2rem;
   font-family: 'Ubuntu', sans-serif;
-  color: transparent;
-  background: linear-gradient(
-   90deg,
-   #fc87da 0%,
-   #cb94ef 36%,
-   #41e0e7 70%,
-   #28fcc2 100%);
+  color:#C97CFF;
+  /*background: linear-gradient(
+   70deg,
+   #0546FF 0%,
+   #7497FA 36%,
+   #D912FF 70%,
+   #E677FB 100%);
    padding: 5px;
    background-clip: text;
-   -webkit-background-clip: text;
+   -webkit-background-clip: text;*/
 }
-
+@keyframes typing{
+  from{
+    width:0;
+  }
+}
+@keyframes blink{
+  50%{
+    border-color: transparent;
+  }
+}
 .introAbout {
+  white-space: nowrap;
+  overflow: hidden;
+  width:20ch;
   margin-top: 5px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
   text-align: center;
-  -webkit-font-smoothing: antialiased
+  border-right: 1px solid;
+  -webkit-font-smoothing: antialiased;
+  animation:typing 4s steps(23) ,blink .5s step-end infinite alternate;
 }
 
 .topImage {
@@ -135,7 +151,7 @@ i {
   }
 
   100% {
-    width: 190px;
+    width: 200px;
   }
 }
 
@@ -145,7 +161,7 @@ i {
   }
 
   100% {
-    width: 170px;
+    width: 180px;
   }
 }
 
@@ -155,7 +171,7 @@ i {
   }
 
   100% {
-    width: 80px;
+    width: 100px;
   }
 }
 @keyframes loadjQuery {
@@ -164,7 +180,7 @@ i {
   }
 
   100% {
-    width: 150px;
+    width: 80px;
   }
 }
 .progress::after {
@@ -178,21 +194,21 @@ i {
 }
 
 .htmlProgress::after {
-  width: 190px;
+  width: 200px;
   animation: loadHTML 3s;
 }
 
 .cssProgress::after {
-  width: 170px;
+  width: 180px;
   animation: loadCSS 2.6s;
 }
 
 .jsProgress::after {
-  width: 80px;
+  width: 100px;
   animation: loadJS 2s;
 }
 .jQueryProgress::after {
-  width: 150px;
+  width: 80px;
   animation: loadjQuery 2.2s;
 }
 
@@ -325,8 +341,4 @@ input {
 .link:active {
   box-shadow: 0px 0px 0px black;
   transform: translate(3px, 3px)
-}
-
-#p{
-  
 }
