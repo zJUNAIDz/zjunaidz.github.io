@@ -7,9 +7,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(bg.jpg);
+  background: linear-gradient(rgba(188,95,199,0.5), rgba(188,95,199,0.5));
+  /*background-image: url(bg.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
 }
 
 .form {
