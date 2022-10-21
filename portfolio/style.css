@@ -180,7 +180,7 @@ i {
   }
 
   100% {
-    width: 80px;
+    width: 200px;
   }
 }
 .progress::after {
@@ -204,11 +204,11 @@ i {
 }
 
 .jsProgress::after {
-  width: 100px;
+  width: 160px;
   animation: loadJS 2s;
 }
 .jQueryProgress::after {
-  width: 80px;
+  width: 200px;
   animation: loadjQuery 2.2s;
 }
 
