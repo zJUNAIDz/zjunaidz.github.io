@@ -1,0 +1,18 @@
+Code:
+
+disp ( ’ g ive n    a   graph	with    6    nodes	v i z .	node1  , node 2
+. . . . node 6 ’ )
+	A =[0 1  0  1  1  0;1  0  1  0  1  0;0  1  0  0  0  1;1  0  0  0  0  0;1
+1 0  0  0  0;0 0  1  0  0  0];
+disp (A, ’ The    a d ja c e n c y	matrix	f o r   A   i s  ’ )
+disp ( ’ s e q u e n c e   A   i s	a   path    from    node 4	to	node 6 ;		but i t	i s	not  a t r a i l  s i n c e the edge from node 1	to node 2	i s	used	t w i c e ’ )
+	B =[0  0   0   1  1  0;0  0   0   0  1   1;0  0  0   0   0   0;1  0   0   0  0   0;1
+1 0  0  0  0;0 1  0  0  0  0];
+disp (B, ’ The    a d ja c e n c y	matrix	f o r   B   i s  ’ )
+disp ( ’ s e q u e n c e   B   i s	not   a   path		s i n c e		t h e r e	i s	no edge from node 2  to node 6   i s	used	t w i c e ’ )
+	C =[0  0  0   1   1  0;0  0   1   0  1   0;0  1   0   0  1   0;1  0   0   0   0   0;1
+1 1  0  0  1;0 0  0  0  1  0];
+disp (C, ’ The    a d ja c e n c y	matrix	f o r   C   i s  ’ )
+disp ( ’ s e q u e n c e   C   i s	a	t r a i l	s i n c e	i s	no    edge	i s	used t w i c e ’ )
+        D =[0  0  0  1  1  0;0  0  0  0  0   0;0  0  0  0  1   1;1  0  0  0  0   0;1
+0 1  0  0  0;0 0  1  0  0  0]; ..
