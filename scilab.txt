@@ -1,0 +1,57 @@
+Code:
+
+with 6 nodes
+
+A [0 1 0 1 1 0,1 0 1 0 100 1000 1:1 0000 0:1
+
+viz. nodel, node 2
+
+disp('given a graph
+
+....node 6")
+
+1000 0,00 1 0 0 0]; disp (A,The adjacency
+
+matrix for A is ')
+
+but i
+
+is used twice')
+
+B=[0 0 0 1 1 0:0 0 0 0 1 1:0 0 0 0 0 0;1 0 0 0 0 0,1
+
+disp('sequence A isa
+
+path from node 4 to node 6: is not atrail since the edge from node 1 to
+
+t node 2
+
+10 0 0 0:0 1 0 0 0 0]; disp (B, The adjacency matrix
+
+for B is')
+
+since
+
+there
+
+is
+
+disp('sequence B is not a path
+
+no edge from node 2 to node 6 is used twice') C=[0 0 0 1 1 0,0 0 1 0 1 0:0 1 0 0 1 0,1 0 0 0 0 0;1
+
+11 0 0 1:0 0 0 0 1 0]:
+
+matrix for Cis') trail since is no edge is
+
+disp (C. The adjacency disp('sequence C isa
+
+usedtwice')
+
+D=[0 0 0 1 1 0:0 0 0 0 0 0:0 0 0 0 1 1:1 0 0 0 0 0;1 0100 000 10 0 0]:
+
+disp (D, 'The adjacency matrixfor D is ') disp('sequence D is a simple path from node 4 to
+
+Output:
+
+node 6')
